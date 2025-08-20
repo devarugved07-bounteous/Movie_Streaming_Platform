@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Deva Rugved</title>
+  <link rel="stylesheet" href="styles1.css" />
+</head>
+<body>
+
+  <header>
+    <nav class="navbar">
+      <div class="logo">Deva Rugved</div>
+      <ul class="nav-links">
+        <li><a href="#hero">Home</a></li>
+        <li><a href="#movies">Movies</a></li>
+        <li><a href="#faq">FAQ</a></li>
+        <li><a href="#subscribe">Subscribe</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="hero">
+    <h1>Unlimited Movies, Anytime</h1>
+    <p>Watch your favorite movies instantly. No ads. No interruptions.</p>
+    <a href="#movies" class="hero-btn">Start Watching</a>
+  </section>
+
+  <section id="movies">
+    <h2>Featured Movies</h2>
+    <div class="carousel-wrapper">
+      <div class="carousel-container">
+        <div id="movie-carousel" class="carousel-track"></div>
+      </div>
+      <button class="carousel-btn" id="next">&#10095;</button>
+    </div>
+  </section>
+
+  <section id="faq">
+    <h2>Frequently Asked Questions</h2>
+    <div class="faq-item">
+      <button class="faq-question">What is Deva Rugved?</button>
+      <div class="faq-answer">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-question">Is there a free trial?</button>
+      <div class="faq-answer">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-question">Can I cancel my Subscription?</button>
+      <div class="faq-answer">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+    </div>
+  </section>
+
+  <section id="subscribe">
+    <h2>Subscribe to Deva Rugved</h2>
+    <form id="subscription-form">
+      <input type="email" id="email" placeholder="Enter your email" required />
+      <button type="submit">Subscribe</button>
+      <p id="form-msg"></p>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Deva Rugved. All rights reserved.</p>
+  </footer>
+
+  <script src="scripts.js"></script>
+</body>
+</html>

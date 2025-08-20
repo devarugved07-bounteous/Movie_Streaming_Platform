@@ -1,0 +1,209 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+body {
+    background-color: #000;
+    color: #0f0;
+    line-height: 1.5;
+    user-select: none;
+}
+
+header {
+    background: #000;
+    padding: 15px 20px;
+    border-bottom: 1px solid #0f0;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #0f0;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    color: #0f0;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.nav-links a:hover {
+    color: #f00;
+}
+
+#hero {
+    background: #001100;
+    padding: 80px 20px;
+    text-align: center;
+    border-bottom: 1px solid #0f0;
+}
+
+#hero h1 {
+    font-size: 2.5rem;
+    color: #0f0;
+}
+
+#hero p {
+    font-size: 1rem;
+    color: #0c0;
+    margin: 10px 0 20px;
+}
+
+.hero-btn {
+    margin-top: 20px;
+    padding: 12px 24px;
+    background: #0f0;
+    color: #000;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.hero-btn:hover {
+    background: #f00;
+    color: #fff;
+}
+
+#movies {
+    padding: 40px 20px;
+    text-align: center;
+    border-top: 1px solid #0f0;
+    border-bottom: 1px solid #0f0;
+}
+
+.carousel-wrapper {
+    position: relative;
+    overflow: hidden;
+}
+
+.carousel-container {
+    overflow: hidden;
+}
+
+.carousel-track {
+    display: flex;
+    transition: transform 0.4s ease;
+    gap: 10px;
+}
+
+.movie-card {
+    min-width: 180px;
+    background: #000;
+    border: 1px solid #0f0;
+    padding: 10px;
+    color: #0f0;
+}
+
+.movie-card img {
+    width: 100%;
+}
+
+.movie-card p {
+    margin-top: 10px;
+    font-size: 0.9rem;
+}
+
+.carousel-btn {
+    position: absolute;
+    top: 40%;
+    background: #000;
+    color: #0f0;
+    border: 1px solid #0f0;
+    font-size: 2rem;
+    cursor: pointer;
+    padding: 5px 10px;
+}
+
+
+#next {
+    right: 10px;
+}
+
+#faq {
+    padding: 30px 0;
+    border-bottom: 1px solid #0f0;
+}
+
+.faq-item {
+    width: 100%;
+    padding: 0 20px;
+    margin-bottom: 10px;
+}
+
+.faq-question {
+    width: 100%;
+    background: #000;
+    color: #0f0;
+    padding: 15px;
+    border: 1px solid #0f0;
+    cursor: pointer;
+    text-align: left;
+    font-weight: bold;
+}
+
+.faq-answer {
+    display: none;
+    background: #111;
+    color: #0f0;
+    padding: 15px;
+    border-left: 3px solid #f00;
+}
+
+#subscribe {
+    background: #000;
+    padding: 30px 20px;
+    text-align: center;
+    border-bottom: 1px solid #0f0;
+}
+
+#subscription-form {
+    max-width: 500px;
+    margin: auto;
+}
+
+#subscription-form input {
+    width: 100%;
+    padding: 10px;
+    background: #000;
+    color: #0f0;
+    border: 1px solid #0f0;
+    margin-bottom: 10px;
+}
+
+#subscription-form button {
+    padding: 10px 20px;
+    background: #0f0;
+    color: #000;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#subscription-form button:hover {
+    background: #f00;
+    color: #fff;
+}
+
+footer {
+    background: #000;
+    padding: 20px;
+    text-align: center;
+    color: #0f0;
+    border-top: 1px solid #0f0;
+    font-size: 0.9rem;
+}

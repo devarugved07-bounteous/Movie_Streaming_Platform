@@ -1,0 +1,295 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+body {
+  background: #0f0f0f; 
+  color: #0f0; 
+  line-height: 1.5;
+  user-select: none;
+  overflow-x: hidden;
+}
+
+@keyframes flicker {
+  0%, 100% { opacity: 1; }
+  40% { opacity: 0.4; }
+  60% { opacity: 0.6; }
+}
+
+h1, h2, .logo {
+  animation: flicker 2s infinite;
+  text-shadow:
+    0 0 5px #0f0,
+    0 0 10px #0f0,
+    0 0 20px #0f0,
+    0 0 40px #0f0;
+}
+
+header {
+  background: #010101;
+  border-bottom: 2px solid #0f0;
+  padding: 15px 20px;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #0f0;
+  letter-spacing: 2px;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links a {
+  color: #0f0;
+  text-decoration: none;
+  transition: color 0.3s ease;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.nav-links a:hover {
+  color: #f00; /* Red on hover */
+  text-shadow: 0 0 10px #f00;
+}
+
+#hero {
+  background: linear-gradient(90deg, #001100 0%, #002200 100%);
+  padding: 100px 20px;
+  text-align: center;
+  border-bottom: 2px solid #0f0;
+}
+
+#hero h1 {
+  font-size: 3rem;
+  color: #0f0;
+  letter-spacing: 5px;
+}
+
+#hero p {
+  font-size: 1.2rem;
+  margin: 15px 0 25px;
+  color: #0c0;
+  font-style: italic;
+}
+
+.hero-btn {
+  background: #0f0;
+  color: #000;
+  padding: 12px 30px;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  letter-spacing: 3px;
+  border-radius: 2px;
+  transition: background 0.4s ease;
+  box-shadow: 0 0 20px #0f0;
+}
+
+.hero-btn:hover {
+  background: #f00;
+  color: #fff;
+  box-shadow: 0 0 30px #f00;
+}
+
+#movies {
+  padding: 40px 20px;
+  border-top: 2px solid #0f0;
+  border-bottom: 2px solid #0f0;
+  text-align: center;
+}
+
+.carousel-wrapper {
+  position: relative;
+  overflow: hidden;
+}
+
+.carousel-container {
+  overflow: hidden;
+  width: 100%;
+}
+
+.carousel-track {
+  display: flex;
+  transition: transform 0.6s ease-in-out;
+  gap: 15px;
+}
+
+.movie-card {
+  min-width: 180px;
+  background: #000;
+  border: 1px solid #0f0;
+  border-radius: 5px;
+  padding: 10px;
+  text-align: center;
+  box-shadow: 0 0 5px #0f0, inset 0 0 5px #0f0;
+  transition: box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.movie-card:hover {
+  box-shadow:
+    0 0 15px #f00,
+    inset 0 0 20px #f00;
+}
+
+.movie-card img {
+  width: 100%;
+  border-radius: 5px;
+  filter: drop-shadow(0 0 5px #0f0);
+}
+
+.movie-card p {
+  margin-top: 10px;
+  font-weight: bold;
+  color: #0f0;
+  letter-spacing: 1.5px;
+}
+
+.carousel-btn {
+  position: absolute;
+  top: 40%;
+  background: #000;
+  color: #0f0;
+  border: 1px solid #0f0;
+  font-size: 2.5rem;
+  cursor: pointer;
+  padding: 0 12px;
+  user-select: none;
+  transition: all 0.3s ease;
+  border-radius: 3px;
+  box-shadow: 0 0 10px #0f0;
+}
+
+.carousel-btn:hover {
+  color: #f00;
+  border-color: #f00;
+  box-shadow: 0 0 15px #f00;
+}
+
+#prev {
+  left: 5px;
+}
+
+#next {
+  right: 5px;
+}
+
+#faq {
+  padding: 40px 20px;
+  border-bottom: 2px solid #0f0;
+}
+
+.faq-item {
+  margin-bottom: 10px;
+}
+
+.faq-question {
+  background: #010101;
+  color: #0f0;
+  padding: 15px;
+  border: none;
+  width: 100%;
+  text-align: left;
+  cursor: pointer;
+  font-weight: bold;
+  border: 1px solid #0f0;
+  box-shadow: 0 0 5px #0f0 inset;
+  letter-spacing: 1.5px;
+  transition: background 0.3s ease;
+}
+
+.faq-question:hover {
+  background: #020202;
+}
+
+.faq-answer {
+  display: none;
+  background: #000;
+  color: #0f0;
+  padding: 15px;
+  border-left: 3px solid #f00;
+  letter-spacing: 1px;
+  font-style: italic;
+}
+
+#subscribe {
+  background: #010101;
+  padding: 40px 20px;
+  text-align: center;
+  border-bottom: 2px solid #0f0;
+}
+
+#subscription-form {
+  max-width: 400px;
+  margin: auto;
+}
+
+#subscription-form input {
+  width: 80%;
+  padding: 12px;
+  margin-bottom: 10px;
+  border: 1px solid #0f0;
+  background: #000;
+  color: #0f0;
+  font-weight: bold;
+  letter-spacing: 1.5px;
+  border-radius: 3px;
+  outline: none;
+}
+
+#subscription-form input::placeholder {
+  color: #060;
+}
+
+#subscription-form button {
+  padding: 12px 25px;
+  background: #0f0;
+  border: none;
+  color: #000;
+  font-weight: bold;
+  cursor: pointer;
+  letter-spacing: 3px;
+  border-radius: 3px;
+  transition: background 0.3s ease;
+  box-shadow: 0 0 10px #0f0;
+}
+
+#subscription-form button:hover {
+  background: #f00;
+  color: #fff;
+  box-shadow: 0 0 15px #f00;
+}
+
+#form-msg {
+  margin-top: 10px;
+  font-size: 1rem;
+  color: #0f0;
+  text-shadow: 0 0 5px #0f0;
+}
+
+footer {
+  background: #010101;
+  text-align: center;
+  padding: 20px;
+  color: #0f0;
+  border-top: 2px solid #0f0;
+  font-size: 0.9rem;
+  letter-spacing: 1.5px;
+  text-shadow:
+    0 0 5px #0f0,
+    0 0 10px #0f0;
+}
