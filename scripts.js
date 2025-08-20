@@ -89,4 +89,17 @@ document.getElementById('subscription-form').addEventListener('submit', async (e
     });
 });
 
+const heroCarousel = document.getElementById('hero-carousel');
+let heroIndex = 0;
+
+function updateHeroCarousel() {
+    heroCarousel.style.transform = `translateX(-${heroIndex * 100}%)`;
+}
+
+setInterval(() => {
+    heroIndex = (heroIndex + 1) % 3;
+    updateHeroCarousel();
+}, 2000);
+
+
 fetchMovies();
